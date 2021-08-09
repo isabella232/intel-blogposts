@@ -36,23 +36,23 @@ Additionally, Microservice policies should be developed for the following:
 ![microservices2](images/microservices2.png)
 
 Beware of these potential problem areas: 
-When microservices are implementing a considerable amount of code not related to the business logic they were originally defined to control.
-Multiple microservices are implementing similar capabilities in a non-standardized process.
+* When microservices are implementing a considerable amount of code not related to the business logic they were originally defined to control.
+* Multiple microservices are implementing similar capabilities in a non-standardized process.
 
 A Microservices development team should only focus on implementing business logic; ultimately, they should not be concerned about specific technical needs related to the Microservice distributed environment. Moreover, building non-functional capabilities into applications lacks a centralized governance point of control.
 
 
-Secure Data Transfer and Zero-Trust Security
+## Secure Data Transfer and Zero-Trust Security
 Besides all policies described before, a particular one plays an important role: to make the microservice-to-microservice communication established over a secure and encrypted tunnel.
 
 The best way to achieve this is implementing a Zero-Trust Security environment where the communication tunnel provides natively data authenticity, integrity and privacy.
 
 In fact, a Zero-Trust Security environment provides a scalable way to implement security while managing the microservice-to-microservice connections ensuring authentication, authorization and encryption:
-Authentication to identify the microservice.
-Authorization to control the communication between the microservices.
-Encryption to prevent third parties from viewing the data in transit.
+* Authentication to identify the microservice.
+* Authorization to control the communication between the microservices.
+* Encryption to prevent third parties from viewing the data in transit.
 
-Check the "The Importance of Zero-Trust Security When Making the Microservices Move" ebook to learn about it.
+Check the ["The Importance of Zero-Trust Security When Making the Microservices Move"](https://konghq.com/ebooks/the-importance-of-zero-trust-security-when-making-the-microservices-move/) ebook to learn about it.
 
 
 

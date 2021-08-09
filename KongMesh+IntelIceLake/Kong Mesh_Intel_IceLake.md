@@ -16,12 +16,13 @@ This post will explore how to apply both Kong and Intel technologies to have the
 ## The Business Problem
 Microservice implementation is based on a very dynamic environment; in time, most organizations will have the burden of managing multiple instances of a Microservice. This situation could arise due to:
 
-Throughput: depending on the incoming requests, there might be a higher or lower number of instances of a Microservice.
-Canary Release.
-Blue/Green Deployment.
+1. Throughput: depending on the incoming requests, there might be a higher or lower number of instances of a Microservice.
+2. Canary Release.
+3. Blue/Green Deployment.
 
 In short, the Microservice-to-Microservice communication has specific requirements and issues to solve.
 
+![microservices1](/images/microservices1.png)
 
 
 There are several technical challenges in this example. One of the main responsibilities of Microservice #1 is to balance the load among all Microservice #2 instances; as such, Microservice #1 has to implement Service Discovery and Load Balancing. 

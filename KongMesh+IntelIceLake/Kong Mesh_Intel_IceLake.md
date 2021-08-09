@@ -13,7 +13,7 @@ Microservices and Zero-Trust Security can be a chance to make your systems more 
 This post will explore how to apply both Kong and Intel technologies to have the best of both worlds: encrypted tunnels with faster microservice communication response times in your Service Mesh deployment.
 
 
-The Business Problem
+## The Business Problem
 Microservice implementation is based on a very dynamic environment; in time, most organizations will have the burden of managing multiple instances of a Microservice. This situation could arise due to:
 
 Throughput: depending on the incoming requests, there might be a higher or lower number of instances of a Microservice.

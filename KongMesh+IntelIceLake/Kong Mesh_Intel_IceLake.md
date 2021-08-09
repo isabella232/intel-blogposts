@@ -29,9 +29,9 @@ There are several technical challenges in this example. One of the main responsi
 Additionally, Microservice #2 has to implement some Service Registration capability to tell Microservice #1 when a new instance is available.
 
 Additionally, Microservice policies should be developed for the following:
-. Service Tracing
-. Service Logging
-. Service ACL (Access Control List), and more
+* Service Tracing
+* Service Logging
+* Service ACL (Access Control List), and more
 
 
 Beware of these potential problem areas: 

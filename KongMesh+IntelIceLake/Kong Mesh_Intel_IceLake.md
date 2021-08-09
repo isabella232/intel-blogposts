@@ -88,7 +88,7 @@ The following "Service Mesh and the Natural Evolution of Microservices" ebook pr
 
 ## Enter Kong Mesh
 
-[Kong Mesh](https://konghq.com/kong-mesh/) is an enterprise-grade service mesh for multi-cloud and multi-cluster on both Kubernetes and VMs. Totally based on the open source projects Kuma and Envoy proxy, ensures fast, reliable, and secure communication among application infrastructure services as it provides and manages critical capabilities, such as load balancing, discovery, observability, and access control.
+[Kong Mesh](https://konghq.com/kong-mesh/) is an enterprise-grade service mesh for multi-cloud and multi-cluster on both Kubernetes and VMs. Totally based on the open source projects [Kuma](https://kuma.io/) and [Envoy](https://www.envoyproxy.io/) proxy, ensures fast, reliable, and secure communication among application infrastructure services as it provides and manages critical capabilities, such as load balancing, discovery, observability, and access control.
 
 Kong Mesh is an "Universal Service Mesh" designed for hybrid deployments with both Kubernetes and VMs. Moreover, its Control Plane can manage multiple and independent Meshes at the same time.
 

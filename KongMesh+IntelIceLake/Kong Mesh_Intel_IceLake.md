@@ -71,12 +71,13 @@ The diagram below shows the relationship between the two layers. Flow #1 shows t
 
 Flow #2 shows the sidecars applying the policies previously published to the Microservices communication traffic and reporting to the control plane about their current status. In this sense, for instance, it's worth noting two very important characteristics of the Sidecars.
 
-Each one of the Microservices has a respective sidecar taking care of all incoming and outgoing traffic.
-It is typically implemented as a transparent proxy; whereby, the Microservice doesn't know the sidecar is working very close to it. In doing so, the sidecar is intercepting the traffic and applying the policies previously defined and published by the control plane.
+1. Each one of the Microservices has a respective sidecar taking care of all incoming and outgoing traffic.
+2. It is typically implemented as a transparent proxy; whereby, the Microservice doesn't know the sidecar is working very close to it. In doing so, the sidecar is intercepting the traffic and applying the policies previously defined and published by the control plane.
 
 
 The picture below describes the new Microservice communication and policy enforcement scenario:
 
+![mtls](images/mtls.png)
 
 
 From the Secure Data Transfer perspective, again, the sidecars are responsible for implementing the Zero-Trust Security environment ensuring that the communication between your services is encrypted using mTLS (mutual TLS) protocol.

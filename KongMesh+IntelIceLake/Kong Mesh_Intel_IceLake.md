@@ -22,8 +22,7 @@ Microservice implementation is based on a very dynamic environment; in time, mos
 
 In short, the Microservice-to-Microservice communication has specific requirements and issues to solve.
 
-![microservices1](/images/microservices1.png)
-
+![microservices1](https://github.com/Kong/intel-blogposts/tree/main/KongMesh%2BIntelIceLake/images/microservices1.png)
 
 There are several technical challenges in this example. One of the main responsibilities of Microservice #1 is to balance the load among all Microservice #2 instances; as such, Microservice #1 has to implement Service Discovery and Load Balancing. 
 

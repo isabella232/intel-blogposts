@@ -33,6 +33,7 @@ Additionally, Microservice policies should be developed for the following:
 * Service Logging
 * Service ACL (Access Control List), and more
 
+![microservices2](images/microservices2.png)
 
 Beware of these potential problem areas: 
 When microservices are implementing a considerable amount of code not related to the business logic they were originally defined to control.

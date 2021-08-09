@@ -66,6 +66,7 @@ A Service Mesh Pattern is defined by two layers, a control plane and a data plan
 
 The diagram below shows the relationship between the two layers. Flow #1 shows the admin team going to the control plane to define policies. All the policies are published in the existing sidecars.
 
+![servicemesh](images/servicemesh.png)
 
 
 Flow #2 shows the sidecars applying the policies previously published to the Microservices communication traffic and reporting to the control plane about their current status. In this sense, for instance, it's worth noting two very important characteristics of the Sidecars.

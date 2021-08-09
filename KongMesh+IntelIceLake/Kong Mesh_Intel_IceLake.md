@@ -92,14 +92,10 @@ The following "Service Mesh and the Natural Evolution of Microservices" ebook pr
 
 Kong Mesh is an "Universal Service Mesh" designed for hybrid deployments with both Kubernetes and VMs. Moreover, its Control Plane can manage multiple and independent Meshes at the same time.
 
+![kongmesh](images/kongmesh.png)
 
 
-
-
-
-
-
-Intel Encryption Technologies
+## Intel Encryption Technologies
 
 The 3rd Gen Intel® Xeon® Scalable processor (codename Ice Lake) introduced new Advanced Vector Extensions 512 (Intel® AVX-512) instructions to optimize cryptography computation. Combined with Intel’s open source software libraries, such as IPP Cryptography Library, Multi-Buffer Crypto for IPsec Library (intel-ipsec-mb), Intel® QuickAssist Technology (Intel® QAT) and OpenSSL engine. The solutions improve crypto operations’, such as TLS connection handshake performance substantially.
 These new components provide batch processing of multiple TLS private key operations in parallel. With the asynchronous private key processing mechanism available both in OpenSSL and BoringSSL, the application software can submit handshake private key requests without having to wait one to return before another one can be submitted. In turn, a callback is called for each request once ready. Underneath, the multi-buffer crypto processing can take 8 such asynchronously submitted private key operations and process them in parallel using the AVX512 SIMD (single instruction multiple data) instructions , greatly improving the overall application performance.

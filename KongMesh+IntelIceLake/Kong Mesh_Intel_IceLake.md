@@ -98,19 +98,23 @@ Kong Mesh is an "Universal Service Mesh" designed for hybrid deployments with bo
 ## Intel Encryption Technologies
 
 The [3rd Gen Intel® Xeon® Scalable processor](https://www.intel.com/content/www/us/en/products/platforms/details/ice-lake-sp.html) (codename Ice Lake) introduced new Advanced Vector Extensions 512 (Intel® AVX-512) instructions to optimize cryptography computation. Combined with Intel’s open source software libraries, such as IPP Cryptography Library, Multi-Buffer Crypto for IPsec Library (intel-ipsec-mb), Intel® QuickAssist Technology (Intel® QAT) and OpenSSL engine. The solutions improve crypto operations’, such as TLS connection handshake performance substantially.
+
 These new components provide batch processing of multiple TLS private key operations in parallel. With the asynchronous private key processing mechanism available both in OpenSSL and BoringSSL, the application software can submit handshake private key requests without having to wait one to return before another one can be submitted. In turn, a callback is called for each request once ready. Underneath, the multi-buffer crypto processing can take 8 such asynchronously submitted private key operations and process them in parallel using the AVX512 SIMD (single instruction multiple data) instructions , greatly improving the overall application performance.
+
 Intel is contributing the accelerated TLS handshake code to the Envoy proxy upstream project. Thus, all the service mesh implementations using Envoy, such as Kuma, can leverage the enhanced performance directly by using the upcoming Envoy releases.
+
 The diagram below compares the regular TLS handshake with the new asynchronous and enhanced one implemented with the new AVX-512 technologies.
 
+![icelake](images/icelake.png)
 
 
-Conclusion - The best of both worlds - Service Mesh with fast encrypted communication
+## Conclusion - The best of both worlds - Service Mesh with fast encrypted communication
 
-A Kong Mesh and Intel Crypto NI based Service Mesh implementation provides a solid, scalable and hybrid infrastructure for your Microservice project without the burden of slow connection times we usually face with encrypted tunnels.
+A [Kong Mesh](https://konghq.com/kong-mesh/) and Intel Crypto NI based Service Mesh implementation provides a solid, scalable and hybrid infrastructure for your Microservice project without the burden of slow connection times we usually face with encrypted tunnels.
 
 In the next posts, we will show performance results comparing a Kong Mesh implementation with and without Intel's encryption acceleration technologies
 
-Feel free to check additional capabilities provided by Kong to implement high-performance Service Meshes as well as Intel's new Ice Lake processor related technologies.
+Feel free to check additional capabilities provided by Kong to implement high-performance Service Meshes as well as Intel's new [Ice Lake](https://www.intel.com/content/www/us/en/products/platforms/details/ice-lake-sp.html) processor related technologies.
 
 
 

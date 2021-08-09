@@ -86,9 +86,9 @@ As the mTLS tunnel brings a much more secure environment to our Microservices an
 
 The following "Service Mesh and the Natural Evolution of Microservices" ebook presents the main ideas of the Service Mesh Architecture Pattern and the drivers to implement it in your Microservices project.
 
-Enter Kong Mesh
+## Enter Kong Mesh
 
-Kong Mesh is an enterprise-grade service mesh for multi-cloud and multi-cluster on both Kubernetes and VMs. Totally based on the open source projects Kuma and Envoy proxy, ensures fast, reliable, and secure communication among application infrastructure services as it provides and manages critical capabilities, such as load balancing, discovery, observability, and access control.
+[Kong Mesh](https://konghq.com/kong-mesh/) is an enterprise-grade service mesh for multi-cloud and multi-cluster on both Kubernetes and VMs. Totally based on the open source projects Kuma and Envoy proxy, ensures fast, reliable, and secure communication among application infrastructure services as it provides and manages critical capabilities, such as load balancing, discovery, observability, and access control.
 
 Kong Mesh is an "Universal Service Mesh" designed for hybrid deployments with both Kubernetes and VMs. Moreover, its Control Plane can manage multiple and independent Meshes at the same time.
 

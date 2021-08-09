@@ -2,7 +2,7 @@
 
 Service Mesh is an infrastructure layer that has become a common architectural pattern for intra-service transparent communication.
 
-By combining Kubernetes, a container orchestration framework, you can form a powerful platform for your microservices cluster, addressing the typical technical requirements that occur in highly distributed environments.
+By combining [Kubernetes](https://kubernetes.io) a container orchestration framework, you can form a powerful platform for your microservices cluster, addressing the typical technical requirements that occur in highly distributed environments.
 
 A service mesh is implemented through a sidecar configuration, or proxy instance, for each service instance. The proxy controls interservice communications, security, and monitoring.
 

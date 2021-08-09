@@ -56,13 +56,13 @@ Check the ["The Importance of Zero-Trust Security When Making the Microservices 
 
 
 
-Service Mesh Architecture Pattern as the Solution
+## Service Mesh Architecture Pattern as the Solution
 The purpose of the Service Mesh Architecture Pattern is to extract standard non-functional capabilities of Microservice and apply them as an external component.
 
 A Service Mesh Pattern is defined by two layers, a control plane and a data plane.
 
-control plane: responsible for managing the policies that will drive the Microservice-to-Microservice communication.
-data plane: responsible for implementing and enforcing the policies described by the control plane. It's the external component where all the non-functional capabilities we've described are implemented. The data plane is composed of proxies deployed as sidecars.
+* <b>control plane</b>: responsible for managing the policies that will drive the Microservice-to-Microservice communication.
+* <b>data plane</b>: responsible for implementing and enforcing the policies described by the control plane. It's the external component where all the non-functional capabilities we've described are implemented. The data plane is composed of proxies deployed as sidecars.
 
 The diagram below shows the relationship between the two layers. Flow #1 shows the admin team going to the control plane to define policies. All the policies are published in the existing sidecars.
 
